@@ -1,7 +1,7 @@
 Pagedraw
 ========
 
-Pagedraw is a UI builder for React web apps.  It works like a Sketch or Figma style design tool, but emits good quality JSX code.  You can play with a demo on the web without installing at [https://pagedraw.io/tutorials/basics](https://pagedraw.io/tutorials/basics).  See [https://pagedraw.io/](https://pagedraw.io/) for more info.
+Pagedraw is a UI builder for React web apps.  It works like a Sketch or Figma style design tool, but emits good quality JSX code.  You can play with a demo on the web without installing at [https://pagedraw.io/tutorials/basics](https://pagedraw.io/tutorials/basics). Videos about pagedraw can be found on [Youtube](https://www.youtube.com/channel/UCgAP0A2HDlk81eVKOaChzHg). See [https://pagedraw.io/](https://pagedraw.io/) for more info.
 
 You can download it at [https://github.com/Pagedraw/pagedraw/releases/download/1.0/Pagedraw.zip](https://github.com/Pagedraw/pagedraw/releases/download/1.0/Pagedraw.zip).
 
@@ -54,16 +54,13 @@ yarn run-electron
 
 ### Config for development
 
-The first time you run in development, in the Electron developer tools console, run `__openConfigEditor()` and set your local config to:
+Turn on asserts the first time you run in development mode, which will help you debug.  In the Electron developer tools console, run `__openConfigEditor()` and set your local config to
 ```json
 {
-  "handleRawDocJson": true,
   "crashButton": true,
   "asserts": true
 }
 ```
-
-To get some debugging tools. In particular, make sure to turn asserts on.
 
 ### Running tests
 
@@ -81,3 +78,7 @@ yarn test
 - Same thing for fonts. Today they're being stored directly in the Pagedraw doc as base64 strings and also injected into the compiled code as such
 - Make Sketch Importer into a Sketch to Pagedraw converter command instead of a server.
 - Compile-Check can work with local `/compiler-blobs`, and not depend on S3 to host them.  Look in `/compiler-blob-builder` and `/deploy-checks/fetch-other-compiler-build.js`.
+
+---
+
+The code in the repository is being provided to you under an open source license.  There are multiple contributors to this code. All contributions provided after 2/1/2019 were done in a personal capacity, and the license you receive to code following 2/1/2019 is from the contributors personally and not their respective employers.
