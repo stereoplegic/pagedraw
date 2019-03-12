@@ -10,8 +10,8 @@ function createWindow () {
   mainWindow = new BrowserWindow({show: false})
 
   // and load the index.html of the app.
-  mainWindow.loadFile('index.html')
-  // mainWindow.loadFile('index-dist.html')
+  // mainWindow.loadFile('index.html')
+  mainWindow.loadFile('index-dist.html')
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
